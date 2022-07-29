@@ -1,0 +1,112 @@
+<!-- <div class="sidebar-heading">
+    <img src="../../../../assets/images/BBMS.jpg" alt="" style="width:100%;">
+</div> -->
+<ng-container *ngIf="role == 'Admin'">
+  <div class="list-group list-group-flush">
+    <!-- <a (click)="goTo()" class="list-group-item list-group-item-action">Dashboard</a>
+        <a (click)="goTodonar()" class="list-group-item list-group-item-action">Request for donar</a>
+        <a  (click)="goToacceptor()" class="list-group-item list-group-item-action">Request for acceptor</a>
+        <a  (click)="gotoverifieddat()" class="list-group-item list-group-item-action">Verified Data</a>
+        <a (click)="gotohi()" class="list-group-item list-group-item-action">History</a> -->
+
+    <div class="area">
+      <nav class="main-menu">
+        <div class="sidebar-heading">
+          <!-- <img
+            src="../../../../assets/images/BBMS.jpg"
+            alt=""
+            style="width: 100%"
+          /> -->
+        </div>
+        <ul>
+          <li>
+            <a (click)="goTo()">
+              <i class="fa fa-bar-chart-o fa-2x"></i>
+              <span class="nav-text"> Student List </span>
+            </a>
+          </li>
+          <li>
+            <a (click)="goTodonar()">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text">Section C List</span>
+            </a>
+          </li>
+          <li>
+            <a (click)="goToacceptor()">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text">Section A List</span>
+            </a>
+          </li>
+          <li>
+            <a (click)="Requeted()">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text"> Section B List </span>
+            </a>
+          </li>
+          <li>
+            <a (click)="gotoverifieddat()">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text"> Section E List </span>
+            </a>
+          </li>
+          <li>
+            <a (click)="gotohi()">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text"> Section D List </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="logout">
+          <li>
+            <a>
+              <i class="fa fa-power-off fa-2x"></i>
+              <span class="nav-text"> Logout </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="role == 'User'">
+  <div class="list-group list-group-flush">
+    <a
+      routerLink="/User/profile"
+      class="list-group-item list-group-item-action"
+    ></a>
+  </div>
+  <nav class="main-menu">
+    <div class="sidebar-heading">
+      <!-- <img
+        src="../../../../assets/images/BBMS.jpg"
+        alt=""
+        style="width: 100%"
+      /> -->
+    </div>
+    <ul>
+      <!-- apointment -->
+      <li>
+        <a routerLink="/User/profile">
+          <i class="fa fa-folder-open fa-2x"></i>
+          <span class="nav-text"> Profile </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/User/apointment">
+          <i class="fa fa-list fa-2x"></i>
+          <span class="nav-text"> Choice  </span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="logout">
+      <li>
+        <a>
+          <i class="fa fa-power-off fa-2x"></i>
+          <span class="nav-text"> Logout </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</ng-container>

@@ -1,0 +1,66 @@
+
+
+<div class="container shadow p-3" style="background-color: white;">
+
+  <div class="card-body">
+      <h5 class="card-title"></h5>
+      <div class="table-responsive">
+          <h3>ALL Student List</h3>
+          <table class="table table-striped table-hover">
+              
+                  <thead>
+                      <tr>
+                          <th scope="col">Id</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Enrollment_No</th>
+                          <th scope="col">SGPA</th>
+                          <th scope="col">Assing</th>
+                          <th scope="col">Section Priorities</th>
+                          <th scope="col">Assin section</th>                                        
+                      </tr>
+                  </thead>
+              
+                  <tbody  >
+                      <tr *ngFor="let item of Array1;let i=index">
+                          <td scope="col">{{i+1}}</td>
+                          <td scope="col">{{item.Name_of_Students}}</td>
+                          <td scope="col">{{item.Enrollment_No}}</td>
+                          <td scope="col">{{item.SGPA}}</td>
+                          <td scope="col">{{item.Group}}</td>
+                          <td scope="col">{{item.SectionPriorities}}</td>
+                          <td> <button class="btn btn-primary"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="Accept(item)">Accept</button></td>                
+                      </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Assing Section</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Section
+                </button>
+                <ul class="dropdown-menu" id="select1">
+                  <li><a class="dropdown-item" value="A" id="A"(click)="getOption()">A</a></li>
+                  <li><a class="dropdown-item" value="B" id="B"(click)="getOption1()">B</a></li>
+                  <li><a class="dropdown-item" value="C" id="C"(click)="getOption2()">C</a></li>
+                  <li><a class="dropdown-item" value="D" id="D"(click)="getOption3()">D</a></li>
+                  <li><a class="dropdown-item" value="E" id="E"(click)="getOption4()">E</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

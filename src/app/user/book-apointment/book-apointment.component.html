@@ -1,0 +1,506 @@
+<header class="header">
+  <img src="logo (1).png" alt="" class="img-fluid" />
+  <!-- <h1>Sushila Devi Bansal College of Technology</h1> -->
+</header>
+<!-- <nav class="navbar">
+  <ul>
+    <li><a href="login.html">Home</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav> -->
+
+<br />
+
+<marquee width="90%" behavior="scroll" direction="left" style="color: Darkblue">
+  <h3>It is Recommended that, Open This Page in Desktop Site</h3>
+</marquee>
+<div id="tname">
+  <pre id="TeacherT">
+MV:Madhuri Verma     MD:Mohini Deshmukh        PK:Pooja Karma NK:Nikita Verma</pre
+  >
+  <pre id="TeacherT">
+VJ:Varsha Zokarkar     AP:Arjun Singh Parihar    JT:Jagrati Singh Thakur</pre
+  >
+  <pre id="TeacherT">
+NS:Neelam Sharma     JG:Jagrati Gupta          VS:Vinod Sonkar</pre
+  >
+  <pre id="TeacherT">
+DD:Divya Dubey        RK:Reena Karandikar       GU:Gulafshan </pre
+  >
+  <pre id="TeacherT">PH:Pooja Hardia         GJ:Garima Jain </pre>
+</div>
+
+<section class="container">
+  <div class="row">
+    <h3 style="text-align: center">
+      📌...Choose Section According to Your Priority...📌
+    </h3>
+    <div class="card" id="st-box">
+      <div class="twoCard">
+        <div class="cardPart cardPart1">
+          <div class="card_heading">
+            Section A
+            <hr class="w-25 mx-auto" />
+          </div>
+          <div class="teacher_name">
+            <ul>
+              <li>(EES) MV</li>
+              <li>(Discrete) NV</li>
+              <li>(Data Structure) VZ</li>
+              <li>(Digital System) JG</li>
+              <li>(Object Oriented) RK</li>
+              <li>(Training) VZ & PH</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cardPart cardPart2">
+          <div class="card_heading">
+            Choose Priority
+            <hr class="w-25 mx-auto" />
+          </div>
+
+          <div class="priority_name">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="1card"
+                id="a1"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="A1"> A1 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="1card"
+                id="a2"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="A2"> A2 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="1card"
+                id="a3"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="A3"> A3 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="1card"
+                id="a4"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="A4"> A4 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="1card"
+                id="a5"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="A5"> A5 </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second card -->
+    <div class="card" id="nd-box">
+      <div class="twoCard">
+        <div class="cardPart cardPart1">
+          <div class="card_heading">
+            Section B
+            <hr class="w-25 mx-auto" />
+          </div>
+          <div class="teacher_name">
+            <ul>
+              <li>MD</li>
+              <li>PK</li>
+              <li>ASP</li>
+              <li>NS</li>
+              <li>G</li>
+              <li>ASP & PK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cardPart cardPart2">
+          <div class="card_heading">
+            Choose Priority
+            <hr class="w-25 mx-auto" />
+          </div>
+
+          <div class="priority_name">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="2card"
+                id="b1"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="B1"> B1 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="2card"
+                id="b2"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="B2"> B2 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="2card"
+                id="b3"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="B3"> B3 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="2card"
+                id="b4"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="B4"> B4 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="2card"
+                id="b5"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="B5"> B5 </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- third card -->
+    <div class="card" id="nd-box">
+      <div class="twoCard">
+        <div class="cardPart cardPart1">
+          <div class="card_heading">
+            Section C
+            <hr class="w-25 mx-auto" />
+          </div>
+          <div class="teacher_name">
+            <ul>
+              <li>MV</li>
+              <li>NV</li>
+              <li>JST</li>
+              <li>JG</li>
+              <li>RK</li>
+              <li>JST & RK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cardPart cardPart2">
+          <div class="card_heading">
+            Choose Priority
+            <hr class="w-25 mx-auto" />
+          </div>
+
+          <div class="priority_name">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="3card"
+                id="c1"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="C1"> C1 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="3card"
+                id="c2"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="C2"> C2 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="3card"
+                id="c3"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="C3"> C3 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="3card"
+                id="c4"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="C4"> C4 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="3card"
+                id="c5"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="C5"> C5 </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fourth card -->
+
+    <div class="card" id="nd-box">
+      <div class="twoCard">
+        <div class="cardPart cardPart1">
+          <div class="card_heading">
+            Section D
+            <hr class="w-25 mx-auto" />
+          </div>
+          <div class="teacher_name">
+            <ul>
+              <li>MD</li>
+              <li>PK</li>
+              <li>JST</li>
+              <li>VS</li>
+              <li>G</li>
+              <li>JJST & G</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cardPart cardPart2">
+          <div class="card_heading">
+            Choose Priority
+            <hr class="w-25 mx-auto" />
+          </div>
+
+          <div class="priority_name">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="4card"
+                id="d1"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="D1"> D1 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="4card"
+                id="d2"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="D2"> D2 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="4card"
+                id="d3"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="D3"> D3 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="4card"
+                id="d4"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="D4"> D4 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="4card"
+                id="d5"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="D5"> D5 </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fifth card -->
+    <div class="card" id="nd-box">
+      <div class="twoCard">
+        <div class="cardPart cardPart1">
+          <div class="card_heading">
+            Section E
+            <hr class="w-25 mx-auto" />
+          </div>
+          <div class="teacher_name">
+            <ul>
+              <li>MD</li>
+              <li>PK</li>
+              <li>GJ</li>
+              <li>DD</li>
+              <li>G</li>
+              <li>GJ & NV</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cardPart cardPart2">
+          <div class="card_heading">
+            Choose Priority
+            <hr class="w-25 mx-auto" />
+          </div>
+
+          <div class="priority_name">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="5card"
+                id="e1"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="E1"> E1 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="5card"
+                id="e2"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="E2"> E2 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="5card"
+                id="e3"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="E3"> E3 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="5card"
+                id="e4"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="E4"> E4 </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="5card"
+                id="e5"
+                value="false"
+                (change)="handleOnClick($event)"
+              />
+              <label class="form-check-label" for="E5"> E5 </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<button (click)="getdata()" class="alogin">Submit</button>
+
+<!-- this is for script tag -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>

@@ -1,0 +1,28 @@
+<div class="row mx-0">
+    <div class="col-md-12">
+        <div class="card shadow w-75">
+            <div class="card-body">
+                <h1 class="card-title">Profile</h1>
+                <hr>
+                <div class="d-flex ">
+                    <div class="col-md-4">
+                        <p class="text">Name : </p>
+                        <p class="text">Enrollment No : </p>
+                        <p class="text">SGPA :</p>
+                        <p class="text">Your Choice :</p>
+                        <p class="text">Assing Section :</p>
+                    </div> 
+                    <div class="col-md-8" *ngFor="let item of arr1">
+                        <p class="text">{{item.Name_of_Students}}</p>
+                        <p class="text">{{item.Enrollment_No}}</p>
+                        <p class="text">{{item.SGPA}}</p>
+                        <p class="text">{{item.SectionPriorities}}</p>
+                        <p class="text">{{item.Group}}</p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

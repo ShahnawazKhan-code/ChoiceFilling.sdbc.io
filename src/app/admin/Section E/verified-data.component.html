@@ -1,0 +1,34 @@
+<div class="container shadow p-3" style="background-color: white;">
+
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <div class="table-responsive">
+            <h3>ALL Student List</h3>
+            <table class="table table-striped table-hover">
+                
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Enrollment_No</th>
+                            <th scope="col">SGPA</th>
+                            <th scope="col">Assing</th>
+                            <th scope="col">Section Priorities</th>
+                            <th scope="col">Assin section</th>                                        
+                        </tr>
+                    </thead>
+                
+                    <tbody  >
+                        <tr *ngFor="let item of Array1;let i=index">
+                            <td scope="col">{{i+1}}</td>
+                            <td scope="col">{{item.Name_of_Students}}</td>
+                            <td scope="col">{{item.Enrollment_No}}</td>
+                            <td scope="col">{{item.SGPA}}</td>
+                            <td scope="col">{{item.Group}}</td>
+                            <td scope="col">{{item.SectionPriorities}}</td>
+                          </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>

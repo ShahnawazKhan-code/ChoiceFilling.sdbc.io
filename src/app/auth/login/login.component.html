@@ -1,0 +1,52 @@
+<app-header></app-header>
+<h2 style="margin-top: 6%;" id="login">LOGIN</h2>
+<div class="container " id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+            <form [formGroup]="formGroup" (ngSubmit)="login(formGroup.value)" autocomplete="off">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="form-group eye" class="input-group">
+                    <span>or use your account</span>
+                    <input type="text" placeholder="Enrollment" formControlName="UserName" autofocus="autofocus" id="name" >
+                </div>             
+                <div class="form-group lock"  class="input-group">                
+                    <input type='text' placeholder="Name"
+                        formControlName="Password" id="name" >
+                    <i class="fa eye" [ngClass]="{'fa-eye-slash': !fieldTextType,
+                'fa-eye': fieldTextType }" (click)="toggleFieldTextType()" aria-hidden="true"></i>
+                </div>
+                <div class="form-group">
+                    <button class="btn btnSubmit btn-danger" (click)="login(formGroup.value)">Login</button>
+                </div>
+                <br>
+                <!-- <p class="account">Don’t have an account?<a routerLink="./signup">Sign up</a></p> -->
+            </form>		
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">		
+			<div class="overlay-panel overlay-right">
+			</div>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>
+<!-- fjvbgdujvbhjdfbjvbfdhjbvhjd -->
